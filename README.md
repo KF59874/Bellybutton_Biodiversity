@@ -21,6 +21,7 @@ The website visualizes the biodiversity of the bacteria found in the participant
 
 ### Choosing Data 
 Website visitors are able to choose from the data set of each individual volunteer participant.  This can be done by choosing a *Study ID* number from the drop down menu.
+
 ![Choice](static/images/id.PNG)
 
 ### Website Modifications
