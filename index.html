@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <style>
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: teal;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: darkslategray;
+          color: white
+        }
+        
+        .active {
+          background-color: lightseagreen;
+          color: darkslategray;
+        }
+        </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Link to CSS stylesheet -->
+  <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#bar">Bar Chart</a></li>
+        <li><a href="#bubble">Bubble Chart</a></li>
+      </ul>
+
+
+  <div class="container">
+    <div class="row">
+        <!-- Jumbotron -->
+        <div class="jumbotron col-md-12">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+
+    <!-- Extra paragraph for additional information -->
+    <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Project Overview</h2>
+          <p>This website is designed to visualize research results from a study on biodiversity of bacteria found in belly buttons. The data is interactive, and shows the result of participants of the study. Choose the results of a participant by clicking on the dropdown menu for 'Test Subject ID No:' and choose an appropriate ID.</p>
+          <p>The objecive of this research is to find suitable bacteria out of which synthetic beef can be produced.</p>
+          <p>On this website, the data is visualized in three parts:</p>
+                <ul1>
+                    <li1>Bar chart on the 'Top 10 Bacteria Cultures Found' in each participant's belly button</li>
+                    <li1>'Belly Button Washing Frequency' per participant</li>
+                    <li1>'Bacteria Cultures per Sample'</li>
+                </ul1>
+            <p>If you would like to find out more about each category, simply hover over the bar chart or cultures to find out the name of the most prominent bacteria.</p>
+            
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div id="bar"></div>
+      </div>
+
+      <div class="col-md-5">
+        <div id="gauge"></div>
+      </div>
+
+
+      <div class="col-md-2">
+      </div>
+      
+      <div class="col-md-5">
+        <p>The above bar chart represents the 10 most prominent bacteria found in each volunteer participant.</p>
+        <p>To find out the name of the bacteria, simply hover over the appropriate bar.</p>
+        </div>
+
+      <div class="col-md-5">
+        <p>The above gauge chart showcases the frequency that volunteer participants show their belly button. The number pre-populates with each participant.</p>
+        </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center">
+          <p>The above bubble chart represents the 'Bacteria Culture' per sample taken from each volunteer participant.</p>
+          <p>To get the bacteria name, and the frequency it has appeared in the culture, simply hover over the individual bubble.</p>
+        </div>
+      </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- <script src="plots.js"></script> -->
+  <script src="static/js/charts.js"></script>
+
+</body>
+
+</html>
+
