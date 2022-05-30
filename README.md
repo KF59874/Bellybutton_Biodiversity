@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project has been designed to complete a [website](https://www.google.com "Google's Homepage") to visualize data from a belly button biodiversity research study. The study was conducted to analyze different bacteria found in belly buttons. Volunteer participants had their belly buttons swiped to gather data. 
+This project has been designed to complete a [website](https://kf59874.github.io/Bellybutton_Biodiversity/ "Belly Button Biodiversity Homepage") to visualize data from a belly button biodiversity research study. The study was conducted to analyze different bacteria found in belly buttons. Volunteer participants had their belly buttons swiped to gather data. 
 
 ## Results
 
