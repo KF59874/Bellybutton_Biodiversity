@@ -11,7 +11,7 @@ This project has been designed to complete a [website](https://kf59874.github.io
 ### Website Visualization Tools
 The website visualizes the biodiversity of the bacteria found in the participant's belly buttons. It showcases the data in various charts:
 
-- Bar Chart: *Top 10 Bacteria Cultures Found*
+- Bar Chart: *Top 10 Bacteria Cultures Found*  
  ![Bar Chart](static/images/barchart.PNG)
 - Gauge Chart: *Belly Button Washing Frequency Scrubs per Week*
 ![Gauge Chart](static/images/gauge.PNG)
